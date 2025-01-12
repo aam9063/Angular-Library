@@ -1,0 +1,13 @@
+<div *ngIf="user" class="aamdev-card-user">
+  <img [ngClass]="{'aamdev-card-user--avatar': cardType === 'avatar'}"
+      [src]="user.picture?.medium"
+      alt="user image">
+      <div class="aamdev-card-user--info">
+        <p>{{user.name?.first || ''}}</p>
+        <p>{{user.name?.last || ''}}</p>
+      </div>
+      <div *ngIf="check" class="aamdev-card-user--check">
+        <input type="checkbox" id="checkbox" (click)="onCheck()">
+        <label for="checkbox">Check</label>
+      </div>
+</div>

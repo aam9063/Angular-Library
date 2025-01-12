@@ -1,0 +1,27 @@
+.aamdev-card-user {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 13rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 9px 9px 0 #969c9c;
+  background: rgba(128, 179, 223);
+}
+
+.aamdev-card-user img {
+  display: block;
+  height: 100%;
+}
+
+.aamdev-card-user--info,
+.aamdev-card-user--check {
+  flex: auto;
+  text-align: center;
+  margin: 0;
+}
+
+.aamdev-card-user--avatar {
+  max-width: 20rem;
+  max-height: 20rem;
+  border-radius: 50%;
+}

@@ -3,5 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "@aamdev/ngx-components": {
+      "projectType": "library",
+      "root": "projects/aamdev/ngx-components",
+      "sourceRoot": "projects/aamdev/ngx-components/src",
+      "prefix": "aamdev",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/aamdev/ngx-components/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/aamdev/ngx-components/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/aamdev/ngx-components/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/aamdev/ngx-components/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
   }
 }
