@@ -1,27 +1,55 @@
-# Library
+## Angular Library **@aamdev/ngx-components**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+![Angular](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTNg06p6VGqYMJA1HCbOgfkKLV8oQcE4sOkg&s)
 
-## Development server
+## Content
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Installation](#installation)
+- [Use](#use)
+- [Components Included](#components-included)
+- [Directives Included](#directives-included)
+- [Installation from npm](#installation-from-npm)
+- [Contribution](#contribution)
+- [License](#license)
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To install the @aamdev/ngx-components library from npm, follow these steps:
+1. Open a terminal in the root directory of your Angular project.
+2. Run the following command to install the library:
 
-## Build
+```sh
+npm install @aamdev/ngx-components
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Use
 
-## Running unit tests
+```sh
+import { ToButtonModule } from @aamdev/top-button.module.ts;
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+@NgModule({
+    imports: [
+        TopButtonModule
+        // other modules
+    ],
+    // other configuration modules
+})
+export class AppModule { }
+```
 
-## Running end-to-end tests
+## Components Included
+- **Top-Button**: Button in footer to scroll to the beginning.
+- **Card-User**: Card to group user data.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Directives Included
+- **Highlight**: Used to mark found text
 
-## Further help
+## Contribution
+1. Fork the repository.
+2. Create a branch for your new feature (git checkout -b new-feature).
+3. Make your changes and commit (git commit -m 'Add new functionality').
+4. Push your changes to your fork (git push origin new-feature).
+5. Create a Pull Request on GitHub
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+This project is licensed under the MIT license - see the LICENSE file for details.
